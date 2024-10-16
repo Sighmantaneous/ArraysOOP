@@ -18,9 +18,7 @@ try {
     array1[9] = 1000;
     //array1[10] = 1100;
 
-    for (int i = 0; i < array1.length; i++) {
-        System.out.println("The number at index " + i + " is: " + array1[i]);
-    }
+  enhancedLoop(array1);
 
 
 }
@@ -32,4 +30,11 @@ catch(Exception ee){
 }
 
     }
+
+public static void enhancedLoop(int [] array)  {
+        for(int i :array) {
+            System.out.println("The value is "+i);
+        }
+    }
+
 }
