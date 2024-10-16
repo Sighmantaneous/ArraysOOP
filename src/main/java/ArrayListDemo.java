@@ -18,17 +18,16 @@ public class ArrayListDemo {
             listDemo.add(2000);
 
             enhancedLoop(listDemo);
-            for (int i : listDemo) {
-                System.out.println(i);
-            }
         }
         catch (IndexOutOfBoundsException e) {
             System.out.println("Index out of bounds");
         }
     }
     public static void enhancedLoop(ArrayList<Integer> listArray) {
-        for (int i : listArray) {
-            System.out.println("The number at index " + i + " is " + listArray.get(i));
+        int x = 0;
+        for ( int i : listArray) {
+            System.out.println("The number at "+x+" is "+i);
+            x ++;
         }
     }
 
